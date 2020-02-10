@@ -14,6 +14,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <fstream>
+#include <algorithm>
 
 class ProblemSet {
 public:
@@ -35,7 +37,10 @@ public:
 	const std::string& getPositiveResponse();
 	const std::string& getNegativeResponse();
 
+
 private:
+	// swap question values
+	void swapValues(PSC::Problem*);
 	// create the problem set, using difficulty and arithmetic type
 	void generateProblemSet();
 	// class member setting for difficulty
@@ -45,8 +50,13 @@ private:
 	// storage of strings
 	std::vector<std::string> positiveResponses;
 	std::vector<std::string> negativeResponses;
+	// headings for section in file
+	const std::string POSITIVE_HEADER{"[POSITIVE]"};
+	const std::string NEGATIVE_HEADER{"[NEGATIVE]"};
 	// collection of problems
 	std::vector<PSC::Problem> questions;
+	// variable to store file connection
+	std::ifstream reinforcementStatements;
 };
 
 #endif /* SRC_PROBLEMSET_H_ */

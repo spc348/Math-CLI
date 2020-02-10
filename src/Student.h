@@ -43,7 +43,7 @@ private:
 	int id;
 	// last ten correct
 	std::vector<bool> lastTenAnswers;
-	// assist in calculating average
+	// variables to assist in calculating average
 	int correctAnswers;
 	int incorrectAnswers;
 

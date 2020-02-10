@@ -1,0 +1,12 @@
+[POSITIVE]
+Great!
+Good job!
+Sweet!
+Excellent!
+Keep up the good work!
+[NEGATIVE]
+Don't give up!
+Sorry, that's not correct.
+Practice, practice, practice!
+Keep trying!
+No. Try again!

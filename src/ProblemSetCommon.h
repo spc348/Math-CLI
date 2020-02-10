@@ -10,12 +10,14 @@
 
 namespace PSC{
 
+// struct of difficulties
 enum ProblemSetDifficulty{
 	EASY,
 	MEDIUM,
 	HARD
 };
 
+// struct of operations
 enum ProblemSetArithmetic{
 	ADDITION,
 	SUBTRACTION,
@@ -24,14 +26,13 @@ enum ProblemSetArithmetic{
 	RANDOM
 };
 
+// struct to contain problem data
 struct Problem{
 	int operatorOne;
 	int operatorTwo;
 	double answer;
-	ProblemSetArithmetic operation;
+	char operation;
 };
-
-
 
 }
 #endif /* SRC_PROBLEMSETCOMMON_H_ */
